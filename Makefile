@@ -6,7 +6,9 @@ SRCS = types.c \
 TARGET = cnsc
 CFLAGS = -Wall -O3
 LDFLAGS =
+DESTDIR =
 PREFIX = /usr/local
+BINDIR = $(PREFIX)/bin
 
 OBJ = $(SRCS:.c=.o)
 
@@ -22,6 +24,7 @@ clean:
 	rm -f $(TARGET) $(OBJ)
 
 install: $(TARGET)
-	install $< $(PREFIX)/bin
+	mkdir -p $(DESTDIR)$(BINDIR)
+	install -m0755 $< $(DESTDIR)$(BINDIR)
 
 .PHONY: all clean install
