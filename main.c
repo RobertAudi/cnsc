@@ -52,7 +52,7 @@ main(int argc, char **argv)
             break;
         case 'h':
             usage();
-            log_errlogf(0, "https://github.com/nilsding/cnsc\n");
+            log_errlogf(0, "https://github.com/RobertAudi/cnsc\n");
             return 0;
         case '?':
         default:
