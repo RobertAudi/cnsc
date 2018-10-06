@@ -11,6 +11,7 @@ const struct type_t TYPES[] = {
                   "feature" },
     { "perf", "a code change that improves performance" },
     { "test", "adds missing tests" },
+    { "db", "changes the database" },
     { "chore", "changes to the build process or auxiliary tools or libraries "
                "such as documentation generation" },
     { NULL, NULL }
